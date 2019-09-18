@@ -34,17 +34,14 @@ _ _**mkdir -p outer/inner**
 used to change the working directory
 for instance you could change the directory to the root directory and then to the home directory ; _ _**cd /home/learner/**_ _
 
-**Navigating upwards in the unix file system
-
+**Navigating upwards in the unix file system**
 (..) depicts the parent directory, in case one wanted to move 2 levels upwards, the command would be : **cd ../..**
 
-**Absolute and relative paths
-
+**Absolute and relative paths**
 incase you are working in the /home/learner/learning_unix directory and you then want to change to the /tmp directory, 
 the command would be : **_ _learner@:learning_unix$ cd ../../../tmp/_ _** or **cd /tmp** if you are sure of the path.
 
-**Finding your way back home
-
+**Finding your way back home**
 **cd ~** or **cd** takes you back to the home directory
 
 ### man pages
