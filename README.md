@@ -54,3 +54,27 @@ it gives a manual of how to navigate through the different commands
 ### removing directories
 the **rmdir command** is used.
 **N/B** you have to be outside a directory before you can remove it
+
+### tab completion
+It is used to complete the names of files and programs on most Unix systems without having to type everything
+**up and down arrows** can be used to access any command from your history
+
+### touch command
+it is used to create a new empty files
+for instance; _ _learner@:learning_unix$ touch heaven.txt_ _ which outputs _ _heaven.txt_ _
+
+### mv command
+it is used for moving files to another directory
+for instance; "heaven. txt" can be moved to a directory named "temp"
+**_ _learner@:learning_unix$ mkdir temp
+learner@:learning_unix$ mv heaven.txt temp/
+ls temp
+heaven.txt_ _**
+
+#### wildcards
+asterisk '*' could also be used to move files in one go, it acts as a wild card character which essentially means 'match anything'
+for example; **mv *.txt temp/** would mean move anything that has a '.txt' to the directory 'temp'
+
+the character '?' will match exactly one character. so ls ?ouse will match files like house and mouse but not grouse
+
+### renaming files
