@@ -110,4 +110,22 @@ eanbit6@Bioinfo5_Data$ less rth
                   _q_ to quit    
                   
 ### viewing files with cat
+cat is used to concatenate files
+eanbit6@Bioinfo5_Data $ echo "Evans is my deskmate.">> rth           
+eanbit6@Bioinfo5_Data $ ls rth                                         
+eanbit6@Bioinfo5_Data $ cat rth 
+- we use >> because it appends the file
+          > would overwrite a file
+         
+### wc command
+it tells you how many lines, words, and characters are in a specified file 
+wc -l counts the number of line
+
+### Editing files with nano
+nano is a simple editor that is used to edit or create files
+e.g nano rth
+
+### The $ path environment variable
+
+### 
 
