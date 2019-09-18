@@ -87,6 +87,7 @@ uses the _mv_ command to move between different directories, that is, moving one
 the _rm_ command is still used but with an _-i_ which gives a confirmation message of whether you still want to delete the file
 the command would be _rm -i_
 **_N/B a directory cannot be removed if it still has files inside_**
+_rm -r_ removes files recursively
 
 ### copying files
 uses the _cp command_ to make a copy of a file
