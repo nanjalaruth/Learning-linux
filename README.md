@@ -22,13 +22,12 @@ the remaining forward slash - delimits the various part of the hierarchy directo
 ### mkdir command
 used to make a new working directory
 for instance : learner@:~$ mkdir learning_unix
+If you are interested in creating a number of directories, you could include the command -p which creates the directories in one go
+for instance: mkdir -p EANBiTCohort2/ Programmingforbiolofists/Python/Project/Code
 #### making subdirectories
 the dollar sign ($) is used
 for instance : learner@:~$ mkdir learning_unix $ outer
 _ _you can then change the working directory to **outer** and then view it
-
-2 subdirectories could be made using an single command, that is
-_ _**mkdir -p outer/inner**
 
 ### cd command
 used to change the working directory
@@ -110,3 +109,4 @@ eanbit6@Bioinfo5_Data$ less rth
                   _q_ to quit    
                   
 ### viewing files with cat
+
