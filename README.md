@@ -127,5 +127,28 @@ e.g nano rth
 
 ### The $ path environment variable
 
-### 
+### grep command
+it is used to search files to find lines that match a certain pattern.
+commands that can be used with the grep command include : 
+  - ignore case when matching (-i) _grep -i_
+  - only match whole words (-w) _grep -w_
+  - show lines that don't match a pattern (-v) _grep -v_
+  - Use wildcard characters and other patterns to allow for alternatives (*, ., and [])
 
+### working with columns
+
+
+### combining unix commands with pipes
+pipes allows the sending of output from one command to any other as long as the second command accepts input of some sort
+for example; 
+_eanbit6@Bioinfo5_Data$ grep is rth | wc -c_  searches the specified file for lines matching 'is', sends the lines that match through a pipe to the wc program, -c counts the characters in the matching lines
+_eanbit6@Bioinfo5_Data$ grep is rth | sort | head -n 3 | wc -c_
+sends the output of grep to the Unix sort command which sorts a file alphanumerically by default. The sorted output is sent to the head command which by default shows the first 10 lines of a file, the -n option of this command only show 3 lines which are then sent to the wc command as before.
+
+### miscellaneous unix power commands
+_tail -n 20 file.txt | head_ views the penultimate 10 lines of a file
+_grep "^ATG" file.txt_ show lines of a file that begin with a start codon (ATG)
+_cut -f 3 file.txt | sort -u_ Cut out the 3rd column of a tab-delimited text file and sort it to only show unique lines
+_grep -c '[bc]at' file.txt_ Count how many lines in a file contain the words 'cat' or 'bat' (-c option of grep counts lines)
+_tr 'a-z' 'A-Z' < file.txt_ Turn lower-case text into upper-case (using tr command to 'transliterate')
+_sed 's/Chr1/Chromosome 1/g' file.txt > file2.txt_ Change all occurences of 'Chr1' to 'Chromosome 1' and write changed output to a new file
