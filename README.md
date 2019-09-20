@@ -126,7 +126,12 @@ nano is a simple editor that is used to edit or create files
 e.g nano rth
 
 ### The $ path environment variable
-
+we use the *echo* command to display the content of the environment variable
+for instance;
+    echo $USER gives the path for user
+    echo $HOME gives the path for home
+    echo $PATH gives the path for path
+    
 ### grep command
 it is used to search files to find lines that match a certain pattern.
 commands that can be used with the grep command include : 
@@ -135,8 +140,15 @@ commands that can be used with the grep command include :
   - show lines that don't match a pattern (-v) _grep -v_
   - Use wildcard characters and other patterns to allow for alternatives (*, ., and [])
 
-### working with columns
+### curl command 
+used to download the contents of the URL you provide it with
 
+### cut command
+command for cutting out sections of files and printing it on the standard output
+can be used together with;
+-f displays the rows in a particular column
+-b which displays the bytes (size)
+-c which displays the characters
 
 ### combining unix commands with pipes
 pipes allows the sending of output from one command to any other as long as the second command accepts input of some sort
