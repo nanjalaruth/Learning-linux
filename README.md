@@ -150,6 +150,8 @@ can be used together with;
 -b which displays the bytes (size)
 -c which displays the characters
 
+the paste command can be piped to the cut command outputting the results of the cut command
+
 ### combining unix commands with pipes
 pipes allows the sending of output from one command to any other as long as the second command accepts input of some sort
 for example; 
